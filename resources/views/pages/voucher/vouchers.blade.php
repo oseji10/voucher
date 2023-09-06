@@ -44,7 +44,7 @@
                   {{ $voucher->payment_date }}
                 </td>
                 {{-- <td><a href="{{ route('pages.voucher.print_voucher') }}">View</a></td> --}}
-                <td><a href="{{ route('pages.voucher.print_voucher', ['id' => $voucher->id]) }}">View</a></td>
+                <td><a target="_blank" href="{{ route('pages.voucher.print_voucher', ['id' => $voucher->id]) }}">View</a></td>
                 
               </tr>
             
