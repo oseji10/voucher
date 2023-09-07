@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'laravel/laravel',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => NULL,
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => '2d0d1f12c0cfbfae5d74428f69c0a96c82732a08',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -398,9 +398,9 @@
             'dev_requirement' => false,
         ),
         'laravel/laravel' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => NULL,
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => '2d0d1f12c0cfbfae5d74428f69c0a96c82732a08',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -880,6 +880,15 @@
             'replaced' => array(
                 0 => '4.7.4',
             ),
+        ),
+        'rmunate/spell-number' => array(
+            'pretty_version' => 'v3.2.0',
+            'version' => '3.2.0.0',
+            'reference' => 'e9a232dc89463b48bad8b3394898c83645462bbc',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../rmunate/spell-number',
+            'aliases' => array(),
+            'dev_requirement' => false,
         ),
         'sabberworm/php-css-parser' => array(
             'pretty_version' => '8.4.0',

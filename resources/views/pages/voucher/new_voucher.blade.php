@@ -15,6 +15,24 @@
 
                             @include('alerts.success')
 
+                            <div class="form-group{{ $errors->has('voucher_owner') ? ' has-danger' : '' }}">
+                                <label>{{ _('Voucher Owner') }}</label>
+                                <select name="voucher_owner" class="form-control{{ $errors->has('voucher_owner') ? ' is-invalid' : '' }}">
+                                    <option value="SOML">SOML</option>
+                                    <option value="PV">PV</option>
+                                </select>
+                                @include('alerts.feedback', ['field' => 'voucher_owner'])
+                            </div>
+
+                            <div class="form-group{{ $errors->has('voucher_type') ? ' has-danger' : '' }}">
+                                <label>{{ _('Voucher Type') }}</label>
+                                <select name="voucher_type" class="form-control{{ $errors->has('voucher_type') ? ' is-invalid' : '' }}">
+                                    <option value="Company">Company</option>
+                                    <option value="Individual">Individual</option>
+                                </select>
+                                @include('alerts.feedback', ['field' => 'voucher_type'])
+                            </div>
+
                             <div class="form-group{{ $errors->has('payee') ? ' has-danger' : '' }}">
                                 <label>{{ _('Payee Name') }}</label>
                                 <input type="text" name="payee" class="form-control{{ $errors->has('payee') ? ' is-invalid' : '' }}" placeholder="{{ _('Payee') }}" >
@@ -39,11 +57,7 @@
                                 @include('alerts.feedback', ['field' => 'subhead'])
                             </div>
 
-                            <div class="form-group{{ $errors->has('item') ? ' has-danger' : '' }}">
-                                <label>{{ _('Item') }}</label>
-                                <input type="text" name="item" class="form-control{{ $errors->has('item') ? ' is-invalid' : '' }}" placeholder="{{ _('Item') }}" >
-                                @include('alerts.feedback', ['field' => 'item'])
-                            </div>
+                
 
                             <div class="form-group{{ $errors->has('head_description') ? ' has-danger' : '' }}">
                                 <label>{{ _('Head Description') }}</label>
@@ -56,6 +70,19 @@
                                 <input type="text" name="subhead_description" class="form-control{{ $errors->has('subhead_description') ? ' is-invalid' : '' }}" placeholder="{{ _('Subhead Description') }}" >
                                 @include('alerts.feedback', ['field' => 'subhead_description'])
                             </div>
+
+                            <div class="form-group{{ $errors->has('item') ? ' has-danger' : '' }}">
+                                <label>{{ _('Item') }}</label>
+                                <input type="text" name="item" class="form-control{{ $errors->has('item') ? ' is-invalid' : '' }}" placeholder="{{ _('Item') }}" >
+                                @include('alerts.feedback', ['field' => 'item'])
+                            </div>
+
+                            <div class="form-group{{ $errors->has('item_description') ? ' has-danger' : '' }}">
+                                <label>{{ _('Item Description') }}</label>
+                                <input type="text" name="item_description" class="form-control{{ $errors->has('item_description') ? ' is-invalid' : '' }}" placeholder="{{ _(' Description') }}" >
+                                @include('alerts.feedback', ['field' => 'item_description'])
+                            </div>
+
 
                             <div class="form-group{{ $errors->has('payee_address') ? ' has-danger' : '' }}">
     <label>{{ _('Payee Address') }}</label>
@@ -127,15 +154,18 @@ $(document).ready(function() {
             <div class="form-group">
             <table>
             <tr>
-            <td><label>Payment Item</label></td>
+            <td><label>Payment Description</label></td>
             
             <td><label>Payment Rate</label></td>
+
+            <td><label>Payment Amount</label></td>
             </tr>
 
             <tr>
             <td><input width="40%" type="text" name="payment_description[]" class="form-control" placeholder="Payment Description"></td>
             
             <td><input width="40px" type="text" name="payment_rate[]" class="form-control" placeholder="Payment Rate"></td>
+            <td><input width="40px" type="text" name="payment_amount[]" class="form-control" placeholder="Payment Amount"></td>
             </tr>
             </table>    
                 

@@ -18,22 +18,20 @@ return new class extends Migration
             $table->string('head')->nullable();
             $table->string('subhead')->nullable();
             $table->string('item')->nullable();
+            $table->string('item_description')->nullable();
             $table->string('head_description')->nullable();
             $table->string('subhead_description')->nullable();
             $table->string('payee_address')->nullable();
             $table->string('payment_date')->nullable();
-            $table->string('payment_item')->nullable();
-            $table->text('payment_rate')->nullable();
-            $table->string('payment_amount')->nullable();
-            $table->string('payable_at')->nullable();
             $table->text('payment_description')->nullable();
+            $table->text('payment_rate')->nullable();
+            $table->text('payment_amount')->nullable();
+            $table->string('payment_amount_total')->nullable();
+            $table->string('payable_at')->nullable();
+            $table->string('voucher_owner')->nullable();
+            $table->string('voucher_type')->nullable();
             $table->timestamps();
-            // $table->string('payee')->nullable();
-            // $table->string('payee')->nullable();
-            // $table->string('payee')->nullable();
-            // $table->string('payee')->nullable();
-            // $table->string('payee')->nullable();
-            // $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
+       
         });
 
     }

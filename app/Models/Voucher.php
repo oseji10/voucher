@@ -25,6 +25,7 @@ class Voucher extends Model
     protected $casts = [
         'payment_description' => 'array',
         'payment_rate' => 'array',
+        'payment_amount' => 'array',
     ];
 
 

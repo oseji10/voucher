@@ -95,6 +95,7 @@ class ComposerStaticInitb494f33ed6d760f3a84546da8bf7f3fe
         ),
         'R' => 
         array (
+            'Rmunate\\Utilities\\' => 18,
             'Ramsey\\Uuid\\' => 12,
             'Ramsey\\Collection\\' => 18,
         ),
@@ -348,6 +349,10 @@ class ComposerStaticInitb494f33ed6d760f3a84546da8bf7f3fe
         'Sabberworm\\CSS\\' => 
         array (
             0 => __DIR__ . '/..' . '/sabberworm/php-css-parser/src',
+        ),
+        'Rmunate\\Utilities\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/rmunate/spell-number/src',
         ),
         'Ramsey\\Uuid\\' => 
         array (
@@ -5269,6 +5274,16 @@ class ComposerStaticInitb494f33ed6d760f3a84546da8bf7f3fe
         'Ramsey\\Uuid\\UuidInterface' => __DIR__ . '/..' . '/ramsey/uuid/src/UuidInterface.php',
         'Ramsey\\Uuid\\Validator\\GenericValidator' => __DIR__ . '/..' . '/ramsey/uuid/src/Validator/GenericValidator.php',
         'Ramsey\\Uuid\\Validator\\ValidatorInterface' => __DIR__ . '/..' . '/ramsey/uuid/src/Validator/ValidatorInterface.php',
+        'Rmunate\\Utilities\\Bases\\BaseSpellNumber' => __DIR__ . '/..' . '/rmunate/spell-number/src/Bases/BaseSpellNumber.php',
+        'Rmunate\\Utilities\\Bases\\BaseSpellNumberValidator' => __DIR__ . '/..' . '/rmunate/spell-number/src/Bases/BaseSpellNumberValidator.php',
+        'Rmunate\\Utilities\\Exceptions\\SpellNumberExceptions' => __DIR__ . '/..' . '/rmunate/spell-number/src/Exceptions/SpellNumberExceptions.php',
+        'Rmunate\\Utilities\\Langs\\Langs' => __DIR__ . '/..' . '/rmunate/spell-number/src/Langs/Langs.php',
+        'Rmunate\\Utilities\\Miscellaneous\\Replaces' => __DIR__ . '/..' . '/rmunate/spell-number/src/Miscellaneous/Replaces.php',
+        'Rmunate\\Utilities\\Miscellaneous\\Utilities' => __DIR__ . '/..' . '/rmunate/spell-number/src/Miscellaneous/Utilities.php',
+        'Rmunate\\Utilities\\SpellNumber' => __DIR__ . '/..' . '/rmunate/spell-number/src/SpellNumber.php',
+        'Rmunate\\Utilities\\Validator\\SpellNumberValidator' => __DIR__ . '/..' . '/rmunate/spell-number/src/Validator/SpellNumberValidator.php',
+        'Rmunate\\Utilities\\Validator\\Traits\\CommonValidate' => __DIR__ . '/..' . '/rmunate/spell-number/src/Validator/Traits/CommonValidate.php',
+        'Rmunate\\Utilities\\Wrappers\\NumberFormatterWrapper' => __DIR__ . '/..' . '/rmunate/spell-number/src/Wrappers/NumberFormatterWrapper.php',
         'Sabberworm\\CSS\\CSSList\\AtRuleBlockList' => __DIR__ . '/..' . '/sabberworm/php-css-parser/src/CSSList/AtRuleBlockList.php',
         'Sabberworm\\CSS\\CSSList\\CSSBlockList' => __DIR__ . '/..' . '/sabberworm/php-css-parser/src/CSSList/CSSBlockList.php',
         'Sabberworm\\CSS\\CSSList\\CSSList' => __DIR__ . '/..' . '/sabberworm/php-css-parser/src/CSSList/CSSList.php',
